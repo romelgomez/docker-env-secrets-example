@@ -1,7 +1,6 @@
 const express = require('express');
 require('dotenv').config();
 
-// const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 3000;
 const dbPassword = process.env.DB_PASSWORD;
@@ -16,10 +15,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/secrets', (req, res) => {
-  // const dbPassword = fs.readFileSync('/run/secrets/db_password', 'utf8');
-  // const apiKey = fs.readFileSync('/run/secrets/api_key', 'utf8');
-  // res.send(`DB_PASSWORD is: ${dbPassword}<br>API_KEY is: ${apiKey}`);
-
   res.json({
     DB_PASSWORD: dbPassword,
     API_KEY: apiKey,
