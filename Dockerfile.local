@@ -56,8 +56,8 @@ RUN echo "Running with APP_VERSION=${APP_VERSION}, BUILD_ENV=${BUILD_ENV}, NODE_
 # API_KEY
  
 # Copy secrets for local testing
-COPY secrets/db_password /run/secrets/db_password
-COPY secrets/api_key /run/secrets/api_key
+# COPY secrets/db_password /run/secrets/db_password
+# COPY secrets/api_key /run/secrets/api_key
 
 # Expose the application port
 EXPOSE 3000
