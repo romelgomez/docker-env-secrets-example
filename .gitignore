@@ -1,0 +1,4 @@
+# uncomment this, not commit the "/secrets" folder, this is a example
+# to the inten to test localy only
+# /secrets
+node_modules/
